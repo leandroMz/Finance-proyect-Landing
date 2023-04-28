@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;900&family=Montserrat:ital,wght@0,400;0,800;1,400&display=swap');
+
+:root {
+    --botonPrincipal: #38b6ff;
+    --botonPrincipal: #38b6ff;
+    --colorBase: #4b7ab0;
+    --TitulosDark: #181631;
+    --TitulosLight: #ececf3;
+    --TitulosLightSoft: #dedcf1;
+    --Parrafos: #717076;
+    --textoColor: #2562a8;
+    --fontPrincipal: 'Montserrat', sans-serif;
+    --fontTitulos: 'League Spartan', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* --------------------------------------------------- */
+/* --------------------HEADER------------------- */
+/* --------------------------------------------------- */
+
+/* ----------------NAV BARRRRRR------------------ */
+main {
+    background-color: #ebebeb;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2rem 0rem 4rem;
+    height: 80px;
+    background-color: var(--colorBase);
+}
+
+.boxLogo img {
+    height: 50px;
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
+
+.nav-item a {
+    font-family: var(--fontTitulos);
+    color: #ffffff;
+}
+
+ul.dropdown-menu {
+    background-color: #183658;
+}
+
+.dropdown-item {
+    font-family: var(--fontTitulos);
+    color: #fff;
+}
+
+
+/* CELULAR */
+@media (max-width: 800px) {
+    
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: -5rem;
+        z-index: 1000;
+        margin-top: 0;
+        background-color: var(--textoColor);
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+    }
+    
+
+    .orderHeader {
+        margin: 0 2rem;
+    }
+
+
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {}
