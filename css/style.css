@@ -103,6 +103,37 @@ ul.dropdown-menu {
     color: var(--Parrafos);
 }
 
+/* --------------------- */
+/* --------------------- */
+
+.valoresDolar {
+    display: flex;
+    justify-content: space-around;    
+    background-color: var(--TitulosDark);
+}
+
+.odenDolares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.odenDolares h5{
+    position: relative;
+    top: .4rem;
+    font-size: 1.2em;
+    font-family: var(--fontTitulos);
+    color: var(--textoColor);
+}
+.odenDolares span{    
+    position: relative;
+    bottom: .4rem;
+    font-size: 1em;
+    font-family: var(--fontPrincipal);
+    color: var(--colorBase);
+}
+
+
 
 
 
@@ -352,7 +383,6 @@ footer {
 }
 
 .formulario {
-    padding: 2rem 4rem 0;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
@@ -366,7 +396,7 @@ div.formulario h5 {
     text-align: end;
 }
 
-form {
+.form-start {
     display: flex;
     align-items: center;
 }
@@ -379,7 +409,30 @@ input {
     border-radius: 2rem;
     box-shadow: -2px 7px 15px -3px rgba(0, 0, 0, 0.75);
 }
+.errores{
+    padding: .7rem 0;
+}
+#parent li{
+    padding: .2rem 0;
+    position: relative;
+    left: -1rem;
+}
+.errores-push{
+    font-family: var(--fontPrincipal);
+    font-size: .9em;
+    background-color: var(--TitulosDark);
+    color: var(--TitulosLight);
+    border-radius: 1rem;
+    padding: .2rem 1rem;
+    border: 2px solid ;
+}
+.danger{
+    border: 2px solid red;
+}
+.pass{
+    border: 2px solid green;
 
+}
 .send-newsLetter {
     margin-left: 1rem;
     font-family: var(--fontPrincipal);
@@ -473,10 +526,20 @@ div.instituciones-foot img {
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
         padding: 1rem;
     }
+
     /* .dropdown-menu {
         left: 0% !important;
         transform: translateX(-16%) !important;
     } */
+    .odenDolares h5{
+        font-size: .65em;
+        padding-bottom: .3rem;
+    }
+    .odenDolares span{
+        font-size: .6em;
+        text-align: center;
+    }
+
 
     .subtitleOne-text {
         padding: 2rem 2rem .5rem 2rem;
@@ -616,13 +679,261 @@ div.instituciones-foot img {
         font-size: .6em;
     }
 
-    .nosotros-mobile{
+    .nosotros-mobile {
         font-family: var(--fontTitulos);
         font-size: em;
         color: var(--Parrafos);
         padding: 2rem 0 0;
         text-align: center;
     }
+
+    .hr-us {
+        display: none;
+    }
+
+
+    /* ................................. */
+    /* ...........FOOTER............ */
+    /* ................................. */
+
+    footer {
+        padding: 2rem;
+    }
+
+    .subtitle-footer {
+        padding: 1rem 0 0;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .form-start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-start div{
+        padding: .2rem;
+    }
+
+    .formulario {
+        padding-top: 2rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.formulario h5 {
+        font-size: 1em;
+    }
+
+    .links-footer {
+        padding: 4rem 0 0;
+        flex-direction: column-reverse;
+    }
+
+    .order-icons {
+        margin: 0;
+        padding: 0 0 1em;
+    }
+
+    ul.order-icons {
+        font-size: 2em;
+    }
+
+    .instituciones-foot {
+        display: none;
+    }
+
+    .copy-text {
+        margin: 0;
+        padding: 0;
+        color: #717076;
+        background-color: var(--colorFooter);
+    }
+
+    .errores{
+        padding: .7rem 0;
+    }
+    #parent li{
+        padding: .2rem 0;
+        position: relative;
+        left: -1rem;
+    }
+    .errores-push{
+        font-size: .7em;
+    }
+
+
+}
+
+
+/* TABLET */
+@media (min-width: 801px) and (max-width: 900px) {
+    .subtitleOne-text {
+        padding: 2rem 0rem;
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+  
+    .odenDolares h5{
+        font-size: 1em;
+    }
+    .odenDolares span{
+        font-size: .7em;
+    }
+
+
+    .subtitleOne-text span:nth-of-type(2) {
+        font-size: 1em;
+    }
+
+    .cards-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .card:last-of-type {
+        display: none;
+    }
+
+    .subtitleTwo-text {
+        padding: 3rem 0 0;
+        font-size: 1.3em;
+    }
+
+
+
+    /* ------------------------ */
+    /* SECTION THREE */
+    /* ......................... */
+    .sectionThree {
+        padding: 2rem;
+    }
+
+    div.boxSectionT h5 {
+        font-size: 1em;
+    }
+
+    div.boxSectionT h2 {
+        font-size: 1.5em;
+    }
+
+    div.boxSectionT h6 {
+        font-size: 1em;
+    }
+
+    div.boxSectionT h4 {
+        padding: 1rem 0 0;
+    }
+
+    div.boxSectionT h4 a {
+        font-size: .8em;
+    }
+
+    .imageServiceT {
+        width: 20rem;
+        height: auto;
+    }
+
+    /* --------------------------- */
+    /* CUARTOOOOOOOO-------------- */
+
+    div.imageServiceF {
+        display: none;
+    }
+
+    .sectionFour {
+        padding: 2rem 0 0 0;
+        margin: 1rem;
+    }
+
+
+    .boxSectionF {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    div.boxSectionF h5 {
+        font-size: 1.4em;
+    }
+
+    div.boxSectionF h2 {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    div.boxSectionF h6 {
+        text-align: center;
+        font-size: .8em;
+        font-style: italic;
+    }
+
+    div.boxSectionF h4 {
+        padding: 1rem 0 0;
+    }
+
+    div.boxSectionF h4 a {
+        font-size: .7em;
+        padding: 5px 10px;
+    }
+
+    /* ................................. */
+    /* ...........QUINTOOOOO............ */
+    /* ................................. */
+
+    .sectionFive {
+        margin-left: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .about-us-mobile {
+        display: none;
+    }
+
+    .imageServiceFi {
+        width: 60%;
+        height: auto;
+    }
+
+    .boxSectionFi {
+        margin: 1rem 2rem 1rem 0.5rem;
+    }
+
+    div.boxSectionFi h5 {
+        font-size: 1em;
+    }
+
+    div.boxSectionFi h2 {
+        font-size: 1.2em;
+    }
+
+    div.boxSectionFi h6 {
+        font-size: .9em;
+    }
+
+    div.boxSectionFi h7 {
+        font-size: .8em;
+    }
+
+    .nosotros-mobile {
+        font-family: var(--fontTitulos);
+        font-size: em;
+        color: var(--Parrafos);
+        padding: 2rem 0 0;
+        text-align: center;
+    }
+
     .hr-us {
         display: none;
     }
@@ -679,6 +990,7 @@ div.instituciones-foot img {
 
 }
 
+
 /* DESKTOP */
 @media (min-width: 800px) {
 
@@ -721,6 +1033,9 @@ div.instituciones-foot img {
         flex-direction: column;
         align-items: end;
         text-align: end;
+    }
+    .formulario {
+        padding: 2rem 4rem 0;
     }
 
 }

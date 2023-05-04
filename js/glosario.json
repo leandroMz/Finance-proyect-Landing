@@ -1,0 +1,21 @@
+{
+    "titulo": "A",
+    "contenido": [
+      {
+        "etiqueta": "h6",
+        "texto": "Título de sección 1"
+      },
+      {
+        "etiqueta": "p",
+        "texto": "Contenido de sección 1"
+      },
+      {
+        "etiqueta": "h6",
+        "texto": "Título de sección 2"
+      },
+      {
+        "etiqueta": "p",
+        "texto": "Contenido de sección 2"
+      }
+    ]
+  }
