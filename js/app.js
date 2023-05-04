@@ -1,28 +1,28 @@
 fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
-    .then(response => response.json())
-    .then(data => {
-      const valoresDolar = data.filter(d => d.casa.nombre.includes('Dolar'));
-      const dolarOficial = valoresDolar.find(v => v.casa.nombre === 'Dolar Oficial');
-      const dolarBlue = valoresDolar.find(v => v.casa.nombre === 'Dolar Blue');
-      const dolarBolsa = valoresDolar.find(v => v.casa.nombre === 'Dolar Bolsa');
-      const dolarSoja = valoresDolar.find(v => v.casa.nombre === 'Dolar Contado con Liqui');
+  .then(response => response.json())
+  .then(data => {
+    const valoresDolar = data.filter(d => d.casa.nombre.includes('Dolar'));
+    const dolarOficial = valoresDolar.find(v => v.casa.nombre === 'Dolar Oficial');
+    const dolarBlue = valoresDolar.find(v => v.casa.nombre === 'Dolar Blue');
+    const dolarBolsa = valoresDolar.find(v => v.casa.nombre === 'Dolar Bolsa');
+    const dolarSoja = valoresDolar.find(v => v.casa.nombre === 'Dolar Contado con Liqui');
 
-      const valoresDolarElem = document.querySelector('#dolar-cinta');
-      const dolarOficialElem = valoresDolarElem.querySelector('.odenDolares.d-oficial span');
-      const dolarBlueElem = valoresDolarElem.querySelector('.odenDolares.d-blue span');
-      const dolarBolsaElem = valoresDolarElem.querySelector('.odenDolares.d-bolsa span');
-      const dolarSojaElem = valoresDolarElem.querySelector('.odenDolares.d-soja span');
+    const valoresDolarElem = document.querySelector('#dolar-cinta');
+    const dolarOficialElem = valoresDolarElem.querySelector('.odenDolares.d-oficial span');
+    const dolarBlueElem = valoresDolarElem.querySelector('.odenDolares.d-blue span');
+    const dolarBolsaElem = valoresDolarElem.querySelector('.odenDolares.d-bolsa span');
+    const dolarSojaElem = valoresDolarElem.querySelector('.odenDolares.d-soja span');
 
-      dolarOficialElem.textContent = `Compra $${dolarOficial.casa.compra}  -  Venta $${dolarOficial.casa.venta}`;
-      dolarBlueElem.textContent = `Compra $${dolarBlue.casa.compra}  -  Venta $${dolarBlue.casa.venta}`;
-      dolarBolsaElem.textContent = `Compra $${dolarBolsa.casa.compra}  -  Venta $${dolarBolsa.casa.venta}`;
-      dolarSojaElem.textContent = `Compra $${dolarSoja.casa.compra}  -  Venta $${dolarSoja.casa.venta}`;
-    });
+    dolarOficialElem.textContent = `Compra $${dolarOficial.casa.compra}  -  Venta $${dolarOficial.casa.venta}`;
+    dolarBlueElem.textContent = `Compra $${dolarBlue.casa.compra}  -  Venta $${dolarBlue.casa.venta}`;
+    dolarBolsaElem.textContent = `Compra $${dolarBolsa.casa.compra}  -  Venta $${dolarBolsa.casa.venta}`;
+    dolarSojaElem.textContent = `Compra $${dolarSoja.casa.compra}  -  Venta $${dolarSoja.casa.venta}`;
+  });
 
 
 
-    // EMAIL
-    let forms = document.querySelector("form.reservation");
+// EMAIL
+let forms = document.querySelector("form.reservation");
 forms.addEventListener("submit", function (e) {
   let errores = [];
   let nameForm = document.querySelector("input.form-name")
@@ -60,7 +60,7 @@ forms.addEventListener("submit", function (e) {
     errores.push('<span class="errores-push pass">Correo valido</span>')
     emailForm.setAttribute("style", "border-color: green;")
     acc += 1
-  }  
+  }
   borrarErrores()
   if (acc < 2) {
     e.preventDefault()
@@ -90,4 +90,26 @@ function validar_email(email) {
 }
 function soloLetras(str) {
   return (reg.test(str)) ? true : false;
+}
+
+
+// HORARIO DOLAR
+let fechaActual = new Date();
+let hora = fechaActual.getHours();
+let minutos = fechaActual.getMinutes(); 
+function actualizarFechaHora() {
+  // Obtener la fecha y hora actual
+  const dia = fechaActual.getDate();
+  const mes = fechaActual.getMonth()+1;
+  const anio = fechaActual.getFullYear();
+  document.getElementById("fecha").innerHTML = dia + "/" + mes + "/" + anio;
+  document.getElementById("hora").innerHTML = hora + ":" + minutos + amPm();
+}
+
+setInterval(actualizarFechaHora, 30000);
+function amPm() {
+  if(hora>=12){
+    return "PM"
+  }else
+  return "AM"  
 }

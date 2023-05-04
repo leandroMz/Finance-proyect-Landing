@@ -75,7 +75,9 @@ ul.dropdown-menu {
 .sliderBanner {
     height: 27rem;
 }
-
+.hr-dolar{
+    border: 3px solid rgb(37, 183, 196);
+}
 
 
 
@@ -133,7 +135,16 @@ ul.dropdown-menu {
     color: var(--colorBase);
 }
 
-
+#horarioDolar{
+    background-color: var(--colorBase);
+    text-align: center;
+    font-family: var(--fontPrincipal);
+    font-size: .8em;
+    color: var(--TitulosLightSoft);
+}
+#horarioDolar span{
+    color: #dedcf1;
+}
 
 
 
