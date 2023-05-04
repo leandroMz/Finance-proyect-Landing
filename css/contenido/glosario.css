@@ -133,7 +133,7 @@ button{
     .navbar-collapse {
         position: absolute;
         top: 100%;
-        left: -5rem;
+        left: -6.3rem;
         z-index: 1000;
         margin-top: 0;
         background-color: var(--textoColor);

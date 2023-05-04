@@ -532,7 +532,7 @@ div.instituciones-foot img {
     .navbar-collapse {
         position: absolute;
         top: 100%;
-        left: -5rem;
+        left: -6.3rem;
         z-index: 1000;
         margin-top: 0;
         background-color: var(--textoColor);
@@ -795,6 +795,7 @@ div.instituciones-foot img {
 
 /* TABLET */
 @media (min-width: 801px) and (max-width: 900px) {
+    
     .subtitleOne-text {
         padding: 2rem 0rem;
         font-size: 1.6em;
