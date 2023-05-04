@@ -133,6 +133,8 @@ ul.dropdown-menu {
     font-size: 1em;
     font-family: var(--fontPrincipal);
     color: var(--colorBase);
+    font-weight: bold;
+
 }
 
 #horarioDolar{
@@ -143,7 +145,7 @@ ul.dropdown-menu {
     color: var(--TitulosLightSoft);
 }
 #horarioDolar span{
-    color: #dedcf1;
+    color: var(--TitulosLight);
 }
 
 
