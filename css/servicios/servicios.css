@@ -279,9 +279,19 @@ span.FITB-inptCont[data-type=radiobox] label {
   .card-body p {
     font-size: .6em;
   }
+  .cardsDsktop{
+    display: none;
+  }
+  
 }
 
 
 
 /* DESKTOP */
-@media (min-width: 800px) {}
+@media (min-width: 800px) {
+
+  
+  .cardsMobile{
+    display: none;
+  }
+}

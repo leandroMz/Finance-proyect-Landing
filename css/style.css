@@ -542,6 +542,17 @@ div.instituciones-foot img {
         left: 0% !important;
         transform: translateX(-16%) !important;
     } */
+
+  
+    
+    .titleDolarLiqui{display: none;}
+   
+    
+    .first-dol{
+        display: none;
+    }
+    
+
     .odenDolares h5{
         font-size: .65em;
         padding-bottom: .3rem;
@@ -1004,6 +1015,10 @@ div.instituciones-foot img {
 
 /* DESKTOP */
 @media (min-width: 800px) {
+
+    .titleDolarLiqui2{
+        display: none;
+    }
 
     .nosotros-mobile,
     .nosotros-mobile-hr {

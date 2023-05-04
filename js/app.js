@@ -106,7 +106,7 @@ function actualizarFechaHora() {
   document.getElementById("hora").innerHTML = hora + ":" + minutos + amPm();
 }
 
-setInterval(actualizarFechaHora, 30000);
+setInterval(actualizarFechaHora, 1000);
 function amPm() {
   if(hora>=12){
     return "PM"
