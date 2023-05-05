@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/img/icoo.webp">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" async></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>JECH Capital</title>
+    <meta name="author" content="Leandro Martinez">
+    <meta name="description"
+        content="">
+    <meta name="keywords" content="">
 </head>
-
 <body>
     <header id="inicio-sup">
         <div class="boxLogo">
@@ -59,30 +62,30 @@
     <main>
 
         <div class="valoresDolar" id="dolar-cinta">
-            <hr class="hr-dolar first-dol">
+            <!-- <hr class="hr-dolar first-dol"> -->
             <div class="odenDolares d-oficial">
                 <h5>DÓLAR OFICIAL</h5>
                 <span>Compra $000 - Venta $000</span>
             </div>
-            <hr class="hr-dolar">
+            <!-- <hr class="hr-dolar"> -->
             <div class="odenDolares d-blue">
                 <h5>DÓLAR BLUE</h5>
                 <span>Compra $000 - Venta $000</span>
             </div>
-            <hr class="hr-dolar">
+            <!-- <hr class="hr-dolar"> -->
             <div class="odenDolares d-bolsa">
                 <h5>DÓLAR BOLSA</h5>
                 <span>Compra $000 - Venta $000</span>
             </div>
-            <hr class="hr-dolar">
+            <!-- <hr class="hr-dolar"> -->
             <div class="odenDolares d-soja">
                 <h5 class="titleDolarLiqui">CONTADO CON LIQUI</h5>
                 <h5 class="titleDolarLiqui2">DÓLAR CCL</h5>
                 <span>Compra $000 - Venta $000</span>
             </div>
-            <hr class="hr-dolar first-dol">
+            <!-- <hr class="hr-dolar first-dol"> -->
         </div>
-        <div id="horarioDolar">Actualizado el <span id="fecha"></span> <span id="hora"></span></div>
+        <!-- <div id="horarioDolar">ActualizaSdo el <span id="fecha"></span> <span id="hora"></span></div> -->
         <section class="sectionOne">
             <!-- <div class="sliderBanner"> -->
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
@@ -121,18 +124,12 @@
                 </button>
             </div>
             <!-- </div> -->
-
             <h2 class="subtitleOne-text">
                 <span>Hace tu primer inversion,</span>
                 <span>Potencia tus ahorros.</span><br>
                 <span>con seguimiento de nuestros expertos</span>
             </h2>
-
-
         </section>
-
-
-        
         <section>
             <div class="valoresBolsa">
                 <script type="text/javascript"
@@ -164,7 +161,7 @@
                                     "proName": "NASDAQ:TSLA"
                                 }
                             ],
-                                "showSymbolLogo": false,
+                                "showSymbolLogo": true,
                                     "colorTheme": "dark",
                                         "isTransparent": true,
                                             "displayMode": "adaptive",
@@ -174,12 +171,10 @@
                     </script>
             </div>
         </section>
-
-
         <section>
             <hr class="px-2">
             </div>
-            <div class="cards-info">
+            <div class="cards-info" data-aos="fade-down">
                 <div class="card" style="width: 16rem;">
                     <img src="./images/inicio/cards/c1.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -218,17 +213,13 @@
                             tasa super atractiva.</p>
                     </div>
                 </div>
-
             </div>
-
             <h3 class="subtitleTwo-text">
                 Pone en movimiento tu dinero, sin conocimiento extenso en el mercado
                 <hr>
             </h3>
-
         </section>
-
-        <section class="sectionThree">
+        <section class="sectionThree" data-aos="zoom-in-up">
             <div class="boxSectionT">
                 <h5>ABRÍ TU CUENTA</h5>
                 <h2>Empieza a invertir ahora, maximizando tus ganancias</h2>
@@ -238,8 +229,7 @@
             </div>
             <div class="imageServiceT"><img src="./images/inicio/comenzar.jpg" alt=""></div>
         </section>
-
-        <section class="sectionFour">
+        <section class="sectionFour" data-aos="zoom-in-up">
             <div class="imageServiceF">
                 <img src="./images/inicio/contenido.jpg" alt="">
             </div>
@@ -247,8 +237,10 @@
                 <h5>CONOCE MÁS SOBRE EL MERCADO BURSÁTIL
                     <hr>
                 </h5>
-                <h2>Te ayudamos a conocér y aprender todo sobre el Mercado Bursatil de forma simple, sencilla y gratuita.</h2>
-                <h6>Ayudamos a inversores novatos y expertos en cada paso de su camino, con servicios personalizados de identificación de oportunidades, evaluación de riesgos y estrategias de inversión
+                <h2>Te ayudamos a conocér y aprender todo sobre el Mercado Bursatil de forma simple, sencilla y
+                    gratuita.</h2>
+                <h6>Ayudamos a inversores novatos y expertos en cada paso de su camino, con servicios personalizados de
+                    identificación de oportunidades, evaluación de riesgos y estrategias de inversión
                 </h6>
                 <h4>
                     <a href="./html/contenido/educacion.html">
@@ -260,7 +252,7 @@
         <span id="about-us"></span>
         <h5 class="nosotros-mobile">NOSOTROS</h5>
         <hr class="nosotros-mobile-hr">
-        <section class="sectionFive">
+        <section class="sectionFive" data-aos="zoom-in-up">
             <div class="boxSectionFi">
                 <h5 class="about-us-mobile">NOSOTROS
                     <hr class="hr-us">
@@ -277,13 +269,12 @@
             </div>
         </section>
     </main>
-
     <footer id="contacto-us">
-        <h3 class="subtitle-footer">Mantén tu inversión actualizada con nuestro newsletter financiero.</h3>
+        <h3 class="subtitle-footer"">Mantén tu inversión actualizada con nuestro newsletter financiero.</h3>
         <div class="formulario">
             <h5>Recibe informes GRATIS <br> semanalmente aquí.</h5>
             <div class="email-footer">
-                <div class="get-touch" data-aos="flip-right">
+                <div class="get-touch">
                     <form action="https://formsubmit.co/fogopmcc@gmail.com" method="POST"
                         onsubmit="return submitForm(this);" class="reservation">
                         <div class="form-start">
@@ -311,11 +302,6 @@
                     </form>
                 </div>
             </div>
-
-
-
-
-
         </div>
         <div class="links-footer">
             <div class="order-links-foot">
@@ -361,24 +347,23 @@
             <div>
                 <ul class="order-icons">
                     <li>
-                        <a href="">
+                        <a href="https://facebook.com/jechcapital" target="_blank">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://instagram.com/" target="_blank">
+                        <a href="https://instagram.com/jechcapital" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://gmail.com/jechcapital@gmail.com" target="_blank">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-
         <div class="instituciones-foot">
             <a href="http://www.mae.com.ar/" target="_blank">
                 <img src="./images/inicio/instituciones/1.jpg" alt="">
@@ -413,19 +398,23 @@
             <a href="http://www.bcra.gov.ar/" target="_blank">
                 <img src="./images/inicio/instituciones/11.jpg" alt="">
             </a>
-
-
-
         </div>
         <hr>
         <p class="copy-text">Copyright C Totos los Derechos Reservados.</p>
     </footer>
 
-    <script src="./js/app.js"></script>   
+    <script src="./js/app.js"></script>
     <script src="https://kit.fontawesome.com/e108fbf003.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
