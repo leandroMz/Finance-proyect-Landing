@@ -12,6 +12,7 @@
     --fontPrincipal: 'Montserrat', sans-serif;
     --fontTitulos: 'League Spartan', sans-serif;
 }
+
 * {
     margin: 0px;
     padding: 0px;
@@ -63,6 +64,7 @@ ul.dropdown-menu {
 .orderHeader {
     margin: 0 10rem 5rem;
 }
+
 .title-titulo {
     font-family: var(--fontTitulos);
     font-weight: 600;
@@ -70,6 +72,7 @@ ul.dropdown-menu {
     padding: 2rem 0 0;
     text-align: center;
 }
+
 .title-parrafo {
     font-family: var(--fontPrincipal);
     font-weight: 500;
@@ -77,65 +80,70 @@ ul.dropdown-menu {
     text-align: center;
     padding-bottom: 3rem;
 }
-.glosario-texto{
+
+.glosario-texto {
     border-radius: 1rem;
     box-shadow: 1px 2px 10px rgb(128, 127, 158);
     padding: 1rem;
 }
-.h2-button{background-color: var(--colorBase);
-    border-radius: .7rem;
-    text-align: left;}
-
-div.glosario-texto h2{
-    background-color: var(--colorBase);
-    border-radius: .7rem;
-    text-align: left;
-    padding: .2rem 0 0 0;
-    padding-left: .5rem;
-    /* padding: .2rem 0 0 1rem; */
-    /* margin-bottom: 1.3rem; */
-    font-family: var(--fontTitulos);
-    font-weight: 600;
-    color: var(--TitulosLight);
+.accordion-body{
+    margin-top: 1rem;
 }
-div.glosario-texto h6{
+.accordion-header {
+    font-family: var(--fontTitulos);
+    background-color: var(--colorBase);
+    color: var(--TitulosLight);
+    margin: 1rem 0;
+    border-radius: .7rem;
+    padding-left: .5rem;
+    padding-top: .5rem;
+    box-shadow: 1px 2px 10px rgb(39, 38, 57);
+}
+
+div.glosario-texto h6 {
     padding-left: .8rem;
     font-family: var(--fontTitulos);
     font-size: 1.2em;
     color: var(--TitulosDark);
 
 }
-div.glosario-texto p{
+
+div.glosario-texto p {
     padding-left: .5rem;
     font-family: var(--fontPrincipal);
     font-style: italic;
     font-size: .9em;
     color: var(--Parrafos);
 }
-#botones-de-paginacion{
+
+#botones-de-paginacion {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 2rem 0;
 }
-button{
+
+button {
     font-family: var(--fontTitulos);
     color: var(--TitulosDark);
     padding: 1rem;
     background-color: var(--botonPrincipal);
 }
-.buttonF:hover{
+
+.buttonF:hover {
     color: var(--TitulosLight);
     padding: 1rem;
     background-color: var(--textoColor);
 }
-.active{
+
+.active {
     background-color: var(--textoColor);
     color: var(--TitulosLight);
 }
+
 /* CELULAR */
 @media (max-width: 800px) {
-    
+
     .navbar-collapse {
         position: absolute;
         top: 100%;
@@ -146,7 +154,7 @@ button{
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
         padding: 1rem;
     }
-    
+
 
     .orderHeader {
         margin: 0 2rem;
