@@ -82,12 +82,18 @@ ul.dropdown-menu {
     box-shadow: 1px 2px 10px rgb(128, 127, 158);
     padding: 1rem;
 }
+.h2-button{background-color: var(--colorBase);
+    border-radius: .7rem;
+    text-align: left;}
+
 div.glosario-texto h2{
     background-color: var(--colorBase);
     border-radius: .7rem;
     text-align: left;
-    padding: .2rem 0 0 1rem;
-    margin-bottom: 1.3rem;
+    padding: .2rem 0 0 0;
+    padding-left: .5rem;
+    /* padding: .2rem 0 0 1rem; */
+    /* margin-bottom: 1.3rem; */
     font-family: var(--fontTitulos);
     font-weight: 600;
     color: var(--TitulosLight);

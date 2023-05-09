@@ -12,10 +12,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>JECH Capital</title>
     <meta name="author" content="Leandro Martinez">
-    <meta name="description"
-        content="">
+    <meta name="description" content="">
     <meta name="keywords" content="">
 </head>
+
 <body>
     <header id="inicio-sup">
         <div class="boxLogo">
@@ -87,45 +87,48 @@
         </div>
         <!-- <div id="horarioDolar">ActualizaSdo el <span id="fecha"></span> <span id="hora"></span></div> -->
         <section class="sectionOne">
-            <!-- <div class="sliderBanner"> -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-                <!-- <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div> -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/inicio/SliderImg/s1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/inicio/SliderImg/s2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/inicio/SliderImg/s3.png" class="d-block w-100" alt="...">
-                        <!-- <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div> -->
-                    </div>
+            <!-- tengo el siguiente html generado y editado, que lo traje de bootstrap, el cual corresponde a un slider o carrousel de imagenes, ahora bien, me gustaria que cuando estoy en mobile se renderice otras imagenes las cuales serian ("./images/inicio/SliderImg/s1m.png","./images/inicio/SliderImg/s2m.png","./images/inicio/SliderImg/s3m.png" reemplazando a las de mismo nombre respectivamente sin la m final antes de .png)
+            @media (max-width: 800px)
+            @media (min-width: 800px) -->
+
+
+            <div class="slide-contenedor">
+                <div class="miSlider fade">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./images/inicio/SliderImg/s1.png">
+                        <source media="(max-width: 800px)" srcset="./images/inicio/SliderImg/s1m.png">
+                        <img src="./images/inicio/SliderImg/s1.png" alt="banner Luminarias Fogop">
+                    </picture>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="miSlider fade">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./images/inicio/SliderImg/s2.png">
+                        <source media="(max-width: 800px)" srcset="./images/inicio/SliderImg/s2m.png">
+                        <img src="./images/inicio/SliderImg/s2.png" alt="banner Luminarias Fogop">
+                    </picture>
+                </div>
+                <div class="miSlider fade">
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="./images/inicio/SliderImg/s3.png">
+                        <source media="(max-width: 800px)" srcset="./images/inicio/SliderImg/s3m.png">
+                        <img src="./images/inicio/SliderImg/s3.png" alt="banner Luminarias Fogop">
+                    </picture>
+                </div>
+                <div class="direcciones">
+                    <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                    <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+                </div>
+                <div class="barras">
+                    <span class="barra active" onclick="posicionSlide(1)"></span>
+                    <span class="barra" onclick="posicionSlide(2)"></span>
+                    <span class="barra" onclick="posicionSlide(3)"></span>
+                </div>
             </div>
+
             <!-- </div> -->
             <h2 class="subtitleOne-text">
-                <span>Hace tu primer inversion,</span>
+                <span>Hace tu primer inversion,</span><br class="brOneText">
                 <span>Potencia tus ahorros.</span><br>
                 <span>con seguimiento de nuestros expertos</span>
             </h2>
@@ -137,28 +140,56 @@
                         {
                             "symbols": [
                                 {
-                                    "proName": "FOREXCOM:SPXUSD",
-                                    "title": "S&P 500"
+                                    "description": "GF Galicia",
+                                    "proName": "NASDAQ:GGAL"
                                 },
                                 {
-                                    "proName": "FOREXCOM:NSXUSD",
-                                    "title": "US 100"
+                                    "description": "YPF",
+                                    "proName": "BCBA:YPFD"
                                 },
                                 {
-                                    "proName": "FX_IDC:EURUSD",
-                                    "title": "EUR/USD"
+                                    "description": "ALUA",
+                                    "proName": "BCBA:ALUA"
                                 },
                                 {
-                                    "proName": "BITSTAMP:BTCUSD",
-                                    "title": "Bitcoin"
+                                    "description": "TXAR",
+                                    "proName": "BCBA:TXAR"
                                 },
                                 {
-                                    "proName": "BITSTAMP:ETHUSD",
-                                    "title": "Ethereum"
+                                    "description": "T GAS SUR",
+                                    "proName": "BCBA:TGSU2"
                                 },
                                 {
-                                    "description": "",
+                                    "description": "TESLA",
                                     "proName": "NASDAQ:TSLA"
+                                },
+                                {
+                                    "description": "COCA-COLA",
+                                    "proName": "NYSE:KO"
+                                },
+                                {
+                                    "description": "META",
+                                    "proName": "NASDAQ:META"
+                                },
+                                {
+                                    "description": "Google",
+                                    "proName": "NASDAQ:GOOG"
+                                },
+                                {
+                                    "description": "Merval Index",
+                                    "proName": "INDEX:IAR"
+                                },
+                                {
+                                    "description": "SP 500",
+                                    "proName": "SP:SPX"
+                                },
+                                {
+                                    "description": "US 30",
+                                    "proName": "CURRENCYCOM:US30"
+                                },
+                                {
+                                    "description": "US 100",
+                                    "proName": "CURRENCYCOM:US100"
                                 }
                             ],
                                 "showSymbolLogo": true,
@@ -271,7 +302,7 @@
     </main>
     <footer id="contacto-us">
         <h3 class="subtitle-footer"">Mantén tu inversión actualizada con nuestro newsletter financiero.</h3>
-        <div class="formulario">
+        <div class=" formulario">
             <h5>Recibe informes GRATIS <br> semanalmente aquí.</h5>
             <div class="email-footer">
                 <div class="get-touch">
@@ -302,105 +333,105 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="links-footer">
-            <div class="order-links-foot">
-                <div class="footer-links">
-                    <ul>
-                        <li>
-                            <a href=#inicio-sup>
-                                INICIO
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./html/servicios.html">
-                                SERVICIOS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./html/contenido/glosario.html">
-                                GLOSARIO
-                            </a>
-                        </li>
-                    </ul>
+            </div>
+            <div class="links-footer">
+                <div class="order-links-foot">
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href=#inicio-sup>
+                                    INICIO
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./html/servicios.html">
+                                    SERVICIOS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./html/contenido/glosario.html">
+                                    GLOSARIO
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links second-order-f">
+                        <ul>
+                            <li>
+                                <a href="./html/contenido/libros.html">
+                                    LIBROS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./html/contenido/educacion.html">
+                                    EDUCACION
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about-us">
+                                    NOSOTROS
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-links second-order-f">
-                    <ul>
+                <div>
+                    <ul class="order-icons">
                         <li>
-                            <a href="./html/contenido/libros.html">
-                                LIBROS
+                            <a href="https://facebook.com/jechcapital" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="./html/contenido/educacion.html">
-                                EDUCACION
+                            <a href="https://instagram.com/jechcapital" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#about-us">
-                                NOSOTROS
+                            <a href="mailto:jechcapital@gmail.com" target="_blank">
+                                <i class="fa-solid fa-envelope"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <ul class="order-icons">
-                    <li>
-                        <a href="https://facebook.com/jechcapital" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/jechcapital" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://gmail.com/jechcapital@gmail.com" target="_blank">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="instituciones-foot">
+                <a href="http://www.mae.com.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/1.jpg" alt="">
+                </a>
+                <a href="http://www.mav-sa.com.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/2.jpg" alt="">
+                </a>
+                <a href="http://www.cnv.gov.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/3.jpg" alt="">
+                </a>
+                <a href="https://www.byma.com.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/4.jpg" alt="">
+                </a>
+                <a href="http://www.cadane.com.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/5.jpg" alt="">
+                </a>
+                <a href="https://camarafintech.com.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/6.jpg" alt="">
+                </a>
+                <a href="https://www.nyse.com/" target="_blank">
+                    <img src="./images/inicio/instituciones/7.jpg" alt="">
+                </a>
+                <a href="http://www.rofex.com.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/8.jpg" alt="">
+                </a>
+                <a href="https://www.cafci.org.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/9.jpg" alt="">
+                </a>
+                <a href="https://www.nasdaq.com/" target="_blank">
+                    <img src="./images/inicio/instituciones/10.jpg" alt="">
+                </a>
+                <a href="http://www.bcra.gov.ar/" target="_blank">
+                    <img src="./images/inicio/instituciones/11.jpg" alt="">
+                </a>
             </div>
-        </div>
-        <div class="instituciones-foot">
-            <a href="http://www.mae.com.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/1.jpg" alt="">
-            </a>
-            <a href="http://www.mav-sa.com.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/2.jpg" alt="">
-            </a>
-            <a href="http://www.cnv.gov.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/3.jpg" alt="">
-            </a>
-            <a href="https://www.byma.com.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/4.jpg" alt="">
-            </a>
-            <a href="http://www.cadane.com.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/5.jpg" alt="">
-            </a>
-            <a href="https://camarafintech.com.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/6.jpg" alt="">
-            </a>
-            <a href="https://www.nyse.com/" target="_blank">
-                <img src="./images/inicio/instituciones/7.jpg" alt="">
-            </a>
-            <a href="http://www.rofex.com.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/8.jpg" alt="">
-            </a>
-            <a href="https://www.cafci.org.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/9.jpg" alt="">
-            </a>
-            <a href="https://www.nasdaq.com/" target="_blank">
-                <img src="./images/inicio/instituciones/10.jpg" alt="">
-            </a>
-            <a href="http://www.bcra.gov.ar/" target="_blank">
-                <img src="./images/inicio/instituciones/11.jpg" alt="">
-            </a>
-        </div>
-        <hr>
-        <p class="copy-text">Copyright C Totos los Derechos Reservados.</p>
+            <hr>
+            <p class="copy-text">Copyright C Totos los Derechos Reservados.</p>
     </footer>
 
     <script src="./js/app.js"></script>
