@@ -190,6 +190,7 @@ div.boxSectionT h2 {
     font-size: 3.7em;
     text-shadow: 2px 2px 10px rgb(47, 47, 86);
 }
+
 div.boxSectionT h6 {
     font-family: var(--fontPrincipal);
     font-weight: 400;
@@ -233,6 +234,7 @@ div.boxSectionT a:hover {
     height: 100%;
     object-fit: cover;
 }
+
 /* ----------SECCION CONTENIDOO---------- */
 /* ---------------------------------- */
 div.boxSectionF h5 {
@@ -339,6 +341,7 @@ div.boxSectionFi h7 {
     font-size: 1.3em;
     color: var(--Parrafos);
 }
+
 /* ------------FOOTER----------- */
 /* ---------------------------------- */
 footer {
@@ -364,7 +367,7 @@ footer {
 div.formulario h5 {
     font-family: var(--fontTitulos);
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.7em;
     color: var(--TitulosLightSoft);
     text-align: end;
 }
@@ -377,10 +380,35 @@ div.formulario h5 {
 input {
     background-color: var(--textoColor);
     border: 0;
-    color: var(--TitulosLightSoft);
-    padding: .2rem .8rem;
+    padding: .4rem 1rem;
     border-radius: 2rem;
     box-shadow: -2px 7px 15px -3px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-input-placeholder {
+    color: var(--TitulosLight);
+}
+
+:-moz-placeholder {
+    color: var(--TitulosLight);
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: var(--TitulosLight);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: var(--TitulosLight);
+}
+
+::-ms-input-placeholder {
+    color: var(--TitulosLight);
+}
+
+::placeholder {
+    color: var(--TitulosLight);
 }
 
 .errores {
@@ -424,6 +452,7 @@ input {
     padding: 5px 20px;
     box-shadow: -2px 7px 15px -3px rgba(0, 0, 0, 0.75);
     background-color: var(--botonPrincipal);
+    padding: .43rem 1rem;
 }
 
 .send-newsLetter:hover {
