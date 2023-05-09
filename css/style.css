@@ -68,7 +68,6 @@ ul.dropdown-menu {
     border: 3px solid rgb(37, 183, 196);
 }
 
-/* ---------------------------------- */
 /* ------------MAIN----------- */
 /* ---------------------------------- */
 .subtitleOne-text {
@@ -191,8 +190,6 @@ div.boxSectionT h2 {
     font-size: 3.7em;
     text-shadow: 2px 2px 10px rgb(47, 47, 86);
 }
-
-
 div.boxSectionT h6 {
     font-family: var(--fontPrincipal);
     font-weight: 400;
@@ -236,8 +233,6 @@ div.boxSectionT a:hover {
     height: 100%;
     object-fit: cover;
 }
-
-/* ---------------------------------- */
 /* ----------SECCION CONTENIDOO---------- */
 /* ---------------------------------- */
 div.boxSectionF h5 {
@@ -344,8 +339,6 @@ div.boxSectionFi h7 {
     font-size: 1.3em;
     color: var(--Parrafos);
 }
-
-/* ---------------------------------- */
 /* ------------FOOTER----------- */
 /* ---------------------------------- */
 footer {
@@ -510,10 +503,6 @@ div.instituciones-foot img {
     }
 
     .slider-desktop {
-        display: none;
-    }
-
-    .titleDolarLiqui {
         display: none;
     }
 
@@ -962,10 +951,6 @@ div.instituciones-foot img {
 }
 
 @media (min-width: 800px) {
-
-    .titleDolarLiqui2 {
-        display: none;
-    }
 
     .brOneText {
         display: none;
