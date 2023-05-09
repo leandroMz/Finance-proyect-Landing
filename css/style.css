@@ -23,11 +23,6 @@
     list-style: none;
 }
 
-/* --------------------------------------------------- */
-/* --------------------HEADER------------------- */
-/* --------------------------------------------------- */
-
-/* ----------------NAV BARRRRRR------------------ */
 main {
     background-color: var(--backgroundBodyColor);
 }
@@ -63,29 +58,19 @@ ul.dropdown-menu {
     color: var(--TitulosLight);
 }
 
-
-
 /* ----------BOLSA------------------ */
 .valoresBolsa {
     height: 3rem;
     background-color: var(--colorFooter);
 }
 
-/* ----------SLIDER------------------ */
-.sliderBanner {
-    height: 27rem;
-}
-.hr-dolar{
+.hr-dolar {
     border: 3px solid rgb(37, 183, 196);
 }
-
-
 
 /* ---------------------------------- */
 /* ------------MAIN----------- */
 /* ---------------------------------- */
-
-
 .subtitleOne-text {
     padding: 2rem 10rem;
     font-family: var(--fontTitulos);
@@ -105,12 +90,9 @@ ul.dropdown-menu {
     color: var(--Parrafos);
 }
 
-/* --------------------- */
-/* --------------------- */
-
 .valoresDolar {
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
     background-color: var(--TitulosDark);
 }
 
@@ -119,40 +101,37 @@ ul.dropdown-menu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #0b305a; */
-    /* padding: 0 2rem; */
 }
-.odenDolares h5{
+
+.odenDolares h5 {
     position: relative;
     top: .4rem;
     font-size: 1.2em;
     font-family: var(--fontTitulos);
     color: var(--TitulosLight);
 }
-.odenDolares span{    
+
+.odenDolares span {
     position: relative;
     bottom: .4rem;
     font-size: 1em;
     font-family: var(--fontPrincipal);
     color: var(--colorBase);
     font-weight: bold;
-
 }
 
-#horarioDolar{
+#horarioDolar {
     background-color: var(--colorBase);
     text-align: center;
     font-family: var(--fontPrincipal);
     font-size: .8em;
     color: var(--TitulosLightSoft);
 }
-#horarioDolar span{
+
+#horarioDolar span {
     color: var(--TitulosLight);
 }
 
-
-
-/* TARJETAS */
 .cards-info {
     margin: 0 2 rem;
     display: flex;
@@ -174,19 +153,16 @@ ul.dropdown-menu {
     color: var(--Parrafos);
 }
 
-/* subtitulo parrafo */
 .subtitleTwo-text {
     padding: 2rem 10rem;
     text-align: center;
     color: var(--Parrafos);
     font-family: var(--fontTitulos);
-
 }
 
 /* ---------------------------------- */
 /* ----------SECCION COMENCEMOS---------- */
 /* ---------------------------------- */
-
 .sectionThree {
     background-color: var(--colorBase);
     padding: 2rem 10rem;
@@ -214,7 +190,6 @@ div.boxSectionT h2 {
     font-weight: 600;
     font-size: 3.7em;
     text-shadow: 2px 2px 10px rgb(47, 47, 86);
-
 }
 
 
@@ -254,7 +229,6 @@ div.boxSectionT a:hover {
     justify-content: center;
     align-items: center;
     box-shadow: -2px 7px 15px -3px rgba(0, 0, 0, 0.75);
-
 }
 
 .imageServiceT img {
@@ -263,15 +237,9 @@ div.boxSectionT a:hover {
     object-fit: cover;
 }
 
-
-
 /* ---------------------------------- */
 /* ----------SECCION CONTENIDOO---------- */
 /* ---------------------------------- */
-
-
-
-
 div.boxSectionF h5 {
     color: var(--Parrafos);
     font-family: var(--fontTitulos);
@@ -309,7 +277,6 @@ div.boxSectionF h4 a {
     display: inline-block;
     padding: 10px 20px;
     box-shadow: -2px 7px 15px -3px rgba(0, 0, 0, 0.75);
-
 }
 
 div.boxSectionF a:hover {
@@ -361,7 +328,6 @@ div.boxSectionFi h2 {
     font-weight: 600;
     font-size: 2.3em;
     text-shadow: 2px 2px 10px rgb(172, 172, 184);
-
 }
 
 div.boxSectionFi h6 {
@@ -378,7 +344,6 @@ div.boxSectionFi h7 {
     font-size: 1.3em;
     color: var(--Parrafos);
 }
-
 
 /* ---------------------------------- */
 /* ------------FOOTER----------- */
@@ -424,30 +389,36 @@ input {
     border-radius: 2rem;
     box-shadow: -2px 7px 15px -3px rgba(0, 0, 0, 0.75);
 }
-.errores{
+
+.errores {
     padding: .7rem 0;
 }
-#parent li{
+
+#parent li {
     padding: .2rem 0;
     position: relative;
     left: -1rem;
 }
-.errores-push{
+
+.errores-push {
     font-family: var(--fontPrincipal);
     font-size: .9em;
     background-color: var(--TitulosDark);
     color: var(--TitulosLight);
     border-radius: 1rem;
     padding: .2rem 1rem;
-    border: 2px solid ;
+    border: 2px solid;
 }
-.danger{
+
+.danger {
     border: 2px solid red;
 }
-.pass{
+
+.pass {
     border: 2px solid green;
 
 }
+
 .send-newsLetter {
     margin-left: 1rem;
     font-family: var(--fontPrincipal);
@@ -526,10 +497,6 @@ div.instituciones-foot img {
     background-color: var(--TitulosLightSoft);
 }
 
-
-
-
-/* CELULAR */
 @media (max-width: 800px) {
     .navbar-collapse {
         position: absolute;
@@ -542,34 +509,27 @@ div.instituciones-foot img {
         padding: 1rem;
     }
 
-    /* .dropdown-menu {
-        left: 0% !important;
-        transform: translateX(-16%) !important;
-    } */
-
     .slider-desktop {
         display: none;
-      }
-    
-      
-    
-    .titleDolarLiqui{display: none;}
-   
-    
-    .first-dol{
+    }
+
+    .titleDolarLiqui {
         display: none;
     }
-    
 
-    .odenDolares h5{
+    .first-dol {
+        display: none;
+    }
+
+    .odenDolares h5 {
         font-size: .65em;
         padding-bottom: .3rem;
     }
-    .odenDolares span{
+
+    .odenDolares span {
         font-size: .6em;
         text-align: center;
     }
-
 
     .subtitleOne-text {
         padding: 1rem 5rem;
@@ -580,6 +540,7 @@ div.instituciones-foot img {
     .subtitleOne-text span:nth-of-type(2) {
         font-size: 1.1em;
     }
+
     .subtitleOne-text span:nth-of-type(3) {
         font-size: .8em;
     }
@@ -601,9 +562,7 @@ div.instituciones-foot img {
         font-size: 1.3em;
     }
 
-    /* ------------------------ */
     /* SECTION THREE */
-    /* ......................... */
     .sectionThree {
         padding: 2rem;
     }
@@ -633,7 +592,6 @@ div.instituciones-foot img {
         height: auto;
     }
 
-    /* --------------------------- */
     /* CUARTOOOOOOOO-------------- */
     .sectionFour {
         padding: 2rem;
@@ -672,10 +630,7 @@ div.instituciones-foot img {
         padding: 5px 10px;
     }
 
-    /* ................................. */
     /* ...........QUINTOOOOO............ */
-    /* ................................. */
-
     .sectionFive {
         margin-left: 2rem;
         padding-bottom: 2rem;
@@ -724,11 +679,7 @@ div.instituciones-foot img {
         display: none;
     }
 
-
-    /* ................................. */
     /* ...........FOOTER............ */
-    /* ................................. */
-
     footer {
         padding: 2rem;
     }
@@ -745,7 +696,8 @@ div.instituciones-foot img {
         align-items: center;
         justify-content: center;
     }
-    .form-start div{
+
+    .form-start div {
         padding: .2rem;
     }
 
@@ -786,43 +738,40 @@ div.instituciones-foot img {
         background-color: var(--colorFooter);
     }
 
-    .errores{
+    .errores {
         padding: .7rem 0;
     }
-    #parent li{
+
+    #parent li {
         padding: .2rem 0;
         position: relative;
         left: -1rem;
     }
-    .errores-push{
+
+    .errores-push {
         font-size: .7em;
     }
-
-
 }
 
-
-/* TABLET */
 @media (min-width: 801px) and (max-width: 900px) {
-    
+
     .subtitleOne-text {
         padding: 2rem 0rem;
         font-size: 1.6em;
         text-align: center;
     }
-    
-    
-      .slider-mobile {
+
+    .slider-mobile {
         display: none;
-      }
-  
-    .odenDolares h5{
-        font-size: 1em;
-    }
-    .odenDolares span{
-        font-size: .7em;
     }
 
+    .odenDolares h5 {
+        font-size: 1em;
+    }
+
+    .odenDolares span {
+        font-size: .7em;
+    }
 
     .subtitleOne-text span:nth-of-type(2) {
         font-size: 1em;
@@ -847,11 +796,7 @@ div.instituciones-foot img {
         font-size: 1.3em;
     }
 
-
-
-    /* ------------------------ */
     /* SECTION THREE */
-    /* ......................... */
     .sectionThree {
         padding: 2rem;
     }
@@ -881,9 +826,7 @@ div.instituciones-foot img {
         height: auto;
     }
 
-    /* --------------------------- */
     /* CUARTOOOOOOOO-------------- */
-
     div.imageServiceF {
         display: none;
     }
@@ -892,7 +835,6 @@ div.instituciones-foot img {
         padding: 2rem 0 0 0;
         margin: 1rem;
     }
-
 
     .boxSectionF {
         margin: 0;
@@ -924,10 +866,7 @@ div.instituciones-foot img {
         padding: 5px 10px;
     }
 
-    /* ................................. */
     /* ...........QUINTOOOOO............ */
-    /* ................................. */
-
     .sectionFive {
         margin-left: 2rem;
         padding-bottom: 2rem;
@@ -976,11 +915,7 @@ div.instituciones-foot img {
         display: none;
     }
 
-
-    /* ................................. */
     /* ...........FOOTER............ */
-    /* ................................. */
-
     footer {
         padding: 2rem;
     }
@@ -1024,20 +959,17 @@ div.instituciones-foot img {
         color: #717076;
         background-color: var(--colorFooter);
     }
-
-
 }
 
-
-/* DESKTOP */
 @media (min-width: 800px) {
 
-    .titleDolarLiqui2{
+    .titleDolarLiqui2 {
         display: none;
     }
-    .brOneText{
+
+    .brOneText {
         display: none;
-    } 
+    }
 
     .nosotros-mobile,
     .nosotros-mobile-hr {
@@ -1079,6 +1011,7 @@ div.instituciones-foot img {
         align-items: end;
         text-align: end;
     }
+
     .formulario {
         padding: 2rem 4rem 0;
     }
@@ -1096,9 +1029,9 @@ div.instituciones-foot img {
     background-color: rgb(39, 36, 36);
     box-shadow: -7px 10px 22px -8px rgba(0, 0, 0, 0.9);
     margin-bottom: 1rem;
-  }
- 
-  .direcciones {
+}
+
+.direcciones {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1107,31 +1040,30 @@ div.instituciones-foot img {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-  }
- 
-  .direcciones a {
-    /* background-color: rgba(0, 0, 0, .1); */
+}
+
+.direcciones a {
     color: rgb(255, 255, 255);
     display: inline-block;
     padding: 20px;
     text-decoration: none;
-  }
- 
-  .direcciones a:hover {
+}
+
+.direcciones a:hover {
     background: rgba(0, 0, 0, .5);
     transition: .5s;
-  }
- 
-  .barras {
+}
+
+.barras {
     position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-  }
- 
-  .barra {
+}
+
+.barra {
     cursor: pointer;
     height: 2px;
     width: 25px;
@@ -1140,43 +1072,44 @@ div.instituciones-foot img {
     ;
     display: inline-block;
     margin-left: 3px;
-  }
- 
-  .miSlider {
+}
+
+.miSlider {
     transition: opacity 0.5s ease-in-out;
-  }
- 
-  .active {
+}
+
+.active {
     background-color: #255aaf;
-  }
- 
-  .fade {
+}
+
+.fade {
     animation-name: fade;
     animation-duration: 4.5s;
-  }
- 
-  @keyframes fade {
+}
+
+@keyframes fade {
     0% {
-      opacity: .8;
+        opacity: .8;
     }
- 
+
     20% {
-      opacity: .9;
+        opacity: .9;
     }
- 
+
     50% {
-      opacity: 1;
+        opacity: 1;
     }
- 
+
     75% {
-      opacity: 1;
+        opacity: 1;
     }
- 
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  .miSlider img {
+}
+
+.miSlider img {
     width: 100%;
     height: 100%;
     object-fit: cover;

@@ -20,11 +20,6 @@
     list-style: none;
 }
 
-/* --------------------------------------------------- */
-/* --------------------HEADER------------------- */
-/* --------------------------------------------------- */
-
-/* ----------------NAV BARRRRRR------------------ */
 main {
     background-color: #ebebeb;
 }
@@ -60,7 +55,6 @@ ul.dropdown-menu {
     color: #fff;
 }
 
-
 .orderHeader {
     margin: 0 10rem 5rem;
 }
@@ -86,9 +80,11 @@ ul.dropdown-menu {
     box-shadow: 1px 2px 10px rgb(128, 127, 158);
     padding: 1rem;
 }
-.accordion-body{
+
+.accordion-body {
     margin-top: 1rem;
 }
+
 .accordion-header {
     font-family: var(--fontTitulos);
     background-color: var(--colorBase);
@@ -116,13 +112,6 @@ div.glosario-texto p {
     color: var(--Parrafos);
 }
 
-#botones-de-paginacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
 button {
     font-family: var(--fontTitulos);
     color: var(--TitulosDark);
@@ -130,18 +119,6 @@ button {
     background-color: var(--botonPrincipal);
 }
 
-.buttonF:hover {
-    color: var(--TitulosLight);
-    padding: 1rem;
-    background-color: var(--textoColor);
-}
-
-.active {
-    background-color: var(--textoColor);
-    color: var(--TitulosLight);
-}
-
-/* CELULAR */
 @media (max-width: 800px) {
 
     .navbar-collapse {
@@ -155,13 +132,8 @@ button {
         padding: 1rem;
     }
 
-
     .orderHeader {
         margin: 0 2rem;
     }
 
-
 }
-
-/* DESKTOP */
-@media (min-width: 800px) {}

@@ -21,11 +21,6 @@
   list-style: none;
 }
 
-/* --------------------------------------------------- */
-/* --------------------HEADER------------------- */
-/* --------------------------------------------------- */
-
-/* ----------------NAV BARRRRRR------------------ */
 main {
   background-color: #ebebeb;
 }
@@ -38,9 +33,11 @@ header {
   height: 80px;
   background-color: var(--colorBase);
 }
+
 .boxLogo img {
-    height: 50px;
+  height: 50px;
 }
+
 .nav-item {
   padding: 0 1rem;
 }
@@ -63,15 +60,12 @@ ul.dropdown-menu {
   margin: 0 10rem;
 }
 
-
-
 .title-titulo {
   font-family: var(--fontTitulos);
   font-weight: 600;
   color: var(--Parrafos);
   padding: 2rem 0 0;
   text-align: center;
-
 }
 
 .title-parrafo {
@@ -80,7 +74,8 @@ ul.dropdown-menu {
   color: var(--Parrafos);
   text-align: center;
 }
-.card{
+
+.card {
   box-shadow: 2px 3px 8px rgba(138, 141, 152, 0.8);
 }
 
@@ -95,16 +90,11 @@ ul.dropdown-menu {
   font-style: italic;
 }
 
-
-
-
-/* ...................................... */
 .cintaApertura {
   margin-top: 2rem;
   background-color: var(--colorBase);
   padding: 2rem 10rem;
   box-shadow: 1px 2px 8px rgba(60, 63, 74, 0.8);
-
 }
 
 .textCinta {
@@ -127,20 +117,15 @@ ul.dropdown-menu {
 
 }
 
-/* ------------------------------ */
-/* FORMULARIO-------------------- */
-/*PREFERENCES STYLE*/
 .form-all {
   font-family: Open Sans, sans-serif;
 }
 
 .form-label.form-label-auto {
-
   display: block;
   float: none;
   text-align: left;
   width: 100%;
-
 }
 
 .form-line {
@@ -242,11 +227,6 @@ span.FITB-inptCont[data-type=radiobox] label {
   margin-top: 72px;
 }
 
-/*PREFERENCES STYLE*/
-/*__INSPECT_SEPERATOR__*/
-/* Injected CSS Code */
-
-
 @media (max-width: 800px) {
   .navbar-collapse {
     position: absolute;
@@ -257,7 +237,7 @@ span.FITB-inptCont[data-type=radiobox] label {
     background-color: var(--textoColor);
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
     padding: 1rem;
-  }  
+  }
 
   .orderHeader {
     margin: 0 2rem;
@@ -268,7 +248,8 @@ span.FITB-inptCont[data-type=radiobox] label {
     background-color: var(--colorBase);
     padding: 2rem 2rem;
   }
-  .cintaApertura p{
+
+  .cintaApertura p {
     font-size: 1em;
   }
 
@@ -279,19 +260,15 @@ span.FITB-inptCont[data-type=radiobox] label {
   .card-body p {
     font-size: .6em;
   }
-  .cardsDsktop{
+
+  .cardsDsktop {
     display: none;
   }
-  
+
 }
 
-
-
-/* DESKTOP */
 @media (min-width: 800px) {
-
-  
-  .cardsMobile{
+  .cardsMobile {
     display: none;
   }
 }
