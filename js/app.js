@@ -71,9 +71,11 @@ forms.addEventListener("submit", function (e) {
   } else {
     swal({
       title: "Gracias!",
-      text: "Su solicitud ah sido recibida!",
+      text: "Su solicitud ha sido recibida!",
       icon: "success",
       timer: 2000
+    }).then(function () {
+    window.location.href = "https://jechcapital.netlify.app";      
     });
   }
 });
@@ -90,28 +92,6 @@ function validar_email(email) {
 }
 function soloLetras(str) {
   return (reg.test(str)) ? true : false;
-}
-
-
-// HORARIO DOLAR
-let fechaActual = new Date();
-let hora = fechaActual.getHours();
-let minutos = fechaActual.getMinutes(); 
-function actualizarFechaHora() {
-  // Obtener la fecha y hora actual
-  const dia = fechaActual.getDate();
-  const mes = fechaActual.getMonth()+1;
-  const anio = fechaActual.getFullYear();
-  document.getElementById("fecha").innerHTML = dia + "/" + mes + "/" + anio;
-  document.getElementById("hora").innerHTML = hora + ":" + minutos + amPm();
-}
-
-setInterval(actualizarFechaHora, 1000);
-function amPm() {
-  if(hora>=12){
-    return "PM"
-  }else
-  return "AM"  
 }
 
 // CARROUSEL
@@ -151,3 +131,32 @@ function muestraSlides(n) {
 }
 
 window.addEventListener("scroll", muestraSlides, { passive: true });
+
+$(function () {
+  $('#myButton').floatingWhatsApp({
+    phone: '5493794377417',
+    popupMessage: 'Hola, en que podemos ayudarte? ',
+    message: "Hola, queria consultar acerca de ",
+    showPopup: true,
+    showOnIE: false,
+    position: 'right',
+    headerTitle: '<span class="verifyWpp">Jech Capital</span><img src="/images/cheque.png" class="imageVerify" alt="imagen"/>',
+    headerColor: '#0b305a',
+    backgroundColor: 'transparent',
+    buttonImage: '<img src="/images/whatsapp.svg" alt="logo de Whatsapp, Fogop contacto"/>'
+  });
+});
+
+document.getElementById("231285899337067").addEventListener("submit", function (event) {
+  event.preventDefault()
+  Swal.fire({
+    title: "¡Formulario enviado!",
+    text: "Gracias por completar el formulario.",
+    icon: "success",
+    confirmButtonText: "Aceptar"
+  }).then(function () {
+    window.location.href = "https://jechcapital.netlify.app";
+  });
+});
+
+

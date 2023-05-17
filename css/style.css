@@ -35,7 +35,14 @@ header {
     height: 80px;
     background-color: var(--colorBase);
 }
-
+.verifyWpp{
+    padding-right: .3rem;
+}
+.imageVerify{
+    position: relative;
+    bottom: 1px;
+    width: 15px;
+}
 .boxLogo img {
     height: 50px;
 }
