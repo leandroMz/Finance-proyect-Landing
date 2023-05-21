@@ -124,16 +124,20 @@ ul.dropdown-menu {
 }
 form{
   margin: .5rem 5rem;
-  padding: 0.5px 2rem 2rem;
+  padding: .5px 2rem 2rem;
   background-color: #0b305a;
   box-shadow: 1px 3px 8px rgb(49, 49, 95);
   border-radius: 0 0 0 10rem;  
 }
-
+.form-header{
+  font-family: var(--fontTitulos);
+  font-weight: 900;
+}
 
 
 
 @media (max-width: 800px) {
+  
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -170,8 +174,8 @@ form{
     display: none;
   }
   form{
-    margin: .5rem .1rem;
-    padding: 0.5px .5rem 2rem;
+    margin: 0rem .5rem;
+    padding: 0px .5rem 2rem;
     border-radius: 0 0 0 2rem;  
   }
   main {
