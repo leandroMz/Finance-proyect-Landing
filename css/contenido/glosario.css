@@ -5,6 +5,7 @@
     --botonPrincipal: #38b6ff;
     --colorBase: #4b7ab0;
     --TitulosDark: #181631;
+    --colorFooter: #0b305a;
     --TitulosLight: #ececf3;
     --TitulosLightSoft: #dedcf1;
     --Parrafos: #717076;
@@ -72,7 +73,7 @@ ul.dropdown-menu {
     font-weight: 500;
     color: var(--Parrafos);
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .glosario-texto {
@@ -118,8 +119,67 @@ button {
     padding: 1rem;
     background-color: var(--botonPrincipal);
 }
+/* SECTION COMENZAR */
+.boxSectionT {        
+    background-color: var(--colorFooter);
+    margin-top: 2rem;
+    padding: 2rem 0rem;
+    box-shadow: 2px 3px 4px rgba(99, 115, 193, 0.8);
+    border-radius: 0rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.boxSectionT h2 {
+    font-family: var(--fontTitulos);
+    color: var(--TitulosLight);
+    font-weight: 600;
+    font-size: 1.7em;
+    text-shadow: 2px 2px 7px rgb(47, 47, 86);
+}
+
+div.boxSectionT h6 {
+    font-family: var(--fontPrincipal);
+    font-weight: 400;
+    font-size: 2em;
+    color: var(--TitulosLightSoft);
+}
+
+div.boxSectionT h4 {
+    padding-left: 2rem;
+}
+
+div.boxSectionT h4 a {
+    box-shadow: -2px 3px 5px -3px rgba(0, 0, 0, 0.75);
+    font-family: var(--fontPrincipal);
+    font-weight: 700;
+    font-size: .8em;
+    text-decoration: none;
+    color: var(--TitulosDark);
+    background-color: var(--botonPrincipal);
+    border: 4px solid var(--botonPrincipal);
+    border-radius: 2rem;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+div.boxSectionT a:hover {
+    box-shadow: inset -2px 7px 15px -3px rgba(0, 0, 0, 0.75);
+}
 
 @media (max-width: 800px) {
+    .boxSectionT {    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    div.boxSectionT h4 {
+        padding-left: 0rem;
+    }
 
     .navbar-collapse {
         position: absolute;

@@ -77,6 +77,9 @@ ul.dropdown-menu {
 
 /* ------------MAIN----------- */
 /* ---------------------------------- */
+.cards-info a{
+  text-decoration: none;
+}
 .subtitleOne-text {
     padding: 2rem 10rem;
     font-family: var(--fontTitulos);

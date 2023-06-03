@@ -25,7 +25,6 @@ body{
 }
 
 main {
-  background-color: #ebebeb;
   margin: .5rem 5rem;
   box-shadow: 3px 3px 8px gray;
   border-radius: 0 8rem 0 0;
@@ -133,11 +132,9 @@ form{
   font-family: var(--fontTitulos);
   font-weight: 900;
 }
+.cardAdjust{}
 
-
-
-@media (max-width: 800px) {
-  
+@media (max-width: 800px) {  
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -151,6 +148,9 @@ form{
 
   .orderHeader {
     margin: 0 2rem;
+  }
+  .img-services{
+    
   }
 
   .cintaApertura {
@@ -185,7 +185,6 @@ form{
   .header-large h1.form-header {
     font-size: 2em;
   }
-
 
 }
 

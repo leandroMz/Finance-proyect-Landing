@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B71RNBZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P4B71RNBZB');
+</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -215,46 +224,59 @@
             <hr class="px-2">
             </div>
             <div class="cards-info" data-aos="fade-down">
-                <div class="card" style="width: 16rem;">
-                    <img src="./images/inicio/cards/c1.webp" class="card-img-top" alt="Acciones del mercado bursatil">
-                    <div class="card-body">
-                        <h5 class="card-title">ACCIONES</h5>
-                        <p class="card-text">Conviértete en dueño de una pequeña parte de una empresa </p>
+                <a href="./html/contenido/educacion.html#accionesLink">
+                    <div class="card" style="width: 16rem;">
+                        <img src="./images/inicio/cards/c1.webp" class="card-img-top"
+                            alt="Acciones del mercado bursatil">
+                        <div class="card-body">
+                            <h5 class="card-title">ACCIONES</h5>
+                            <p class="card-text">Conviértete en dueño de una pequeña parte de una empresa y beneficiate de sus ganancias.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 16rem;">
-                    <img src="./images/inicio/cards/c2.webp" class="card-img-top" alt="Cedears, inverti en pesos">
-                    <div class="card-body">
-                        <h5 class="card-title">CEDEARS</h5>
-                        <p class="card-text">Compra participación en las mejores empresas desde argentina y en pesos</p>
+                </a>
+                <a href="./html/contenido/educacion.html#cedearsLink">
+                    <div class="card" style="width: 16rem;">
+                        <img src="./images/inicio/cards/c2.webp" class="card-img-top" alt="Cedears, inverti en pesos">
+                        <div class="card-body">
+                            <h5 class="card-title">CEDEARS</h5>
+                            <p class="card-text">Compra participación en las mejores compañías internacionales desde argentina y en pesos.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 16rem;">
-                    <img src="./images/inicio/cards/c3.webp" class="card-img-top" alt="bonos, bancos, instituciones">
-                    <div class="card-body">
-                        <h5 class="card-title">BONOS</h5>
-                        <p class="card-text">Gana intereses asegurados a cambio de financiar deuda de gobierno y
-                            empresas</p>
+                </a>
+                <a href="./html/contenido/educacion.html#bonosLink">
+                    <div class="card" style="width: 16rem;">
+                        <img src="./images/inicio/cards/c3.webp" class="card-img-top"
+                            alt="bonos, bancos, instituciones">
+                        <div class="card-body">
+                            <h5 class="card-title">BONOS</h5>
+                            <p class="card-text">Gana intereses asegurados a cambio de financiar deuda de gobierno y
+                                empresas.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 16rem;">
-                    <img src="./images/inicio/cards/c4.webp" class="card-img-top"
-                        alt="fondo comun de inversion, gestion de bolsa">
-                    <div class="card-body">
-                        <h5 class="card-title">FONDOS COMUNES</h5>
-                        <p class="card-text">Compra tu parte de una cartera de inversión armada por expertos o entidades
-                            financieras</p>
+                </a>
+                <a href="./html/contenido/educacion.html#fondosLink">
+                    <div class="card" style="width: 16rem;">
+                        <img src="./images/inicio/cards/c4.webp" class="card-img-top"
+                            alt="fondo comun de inversion, gestion de bolsa">
+                        <div class="card-body">
+                            <h5 class="card-title">FONDOS COMUNES</h5>
+                            <p class="card-text">Compra tu parte de una cartera de inversión armada por expertos o
+                                entidades financieras.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 16rem;">
-                    <img src="./images/inicio/cards/c5.webp" class="card-img-top"
-                        alt="Financiate con tus inversiones, mediante cauciones">
-                    <div class="card-body">
-                        <h5 class="card-title">CAUCIONES</h5>
-                        <p class="card-text">Gana intereses como si fuera un plazo fijo pero diario, o toma dinero a una
-                            tasa super atractiva.</p>
+                </a>
+                <a href="./html/contenido/educacion.html#caucionesLink">
+                    <div class="card" style="width: 16rem;">
+                        <img src="./images/inicio/cards/c5.webp" class="card-img-top"
+                            alt="Financiate con tus inversiones, mediante cauciones">
+                        <div class="card-body">
+                            <h5 class="card-title">CAUCIONES</h5>
+                            <p class="card-text">Gana intereses como si fuera un plazo fijo pero diario, o toma dinero a
+                                una tasa super atractiva.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <h3 class="subtitleTwo-text">
                 Pone en movimiento tu dinero, sin conocimiento extenso en el mercado
@@ -329,7 +351,12 @@
                             <div>
                                 <label for="email"></label>
                                 <input class="form-email" type="email" name="email" id="email" class="lang"
-                                    key="text109" placeholder="Ingresa un Correo valido">
+                                    key="text109" placeholder="Correo electrónico valido">
+                            </div>
+                            <div>
+                                <label for="phone"></label>
+                                <input class="form-phone" type="tel" name="phone" id="phone" class="lang"
+                                    key="text110" placeholder="Número de teléfono valido">
                             </div>
                             <div class="form-send">
                                 <button id="button-sub" class="send-newsLetter" type="submit">SOLICITAR INFORME</button>
