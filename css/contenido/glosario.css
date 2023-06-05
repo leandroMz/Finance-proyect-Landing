@@ -122,7 +122,7 @@ button {
 /* SECTION COMENZAR */
 .boxSectionT {        
     background-color: var(--colorFooter);
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 2rem 0rem;
     box-shadow: 2px 3px 4px rgba(99, 115, 193, 0.8);
     border-radius: 0rem 2rem 0rem 2rem;
