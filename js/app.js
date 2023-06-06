@@ -135,8 +135,8 @@ window.addEventListener("scroll", muestraSlides, { passive: true });
 $(function () {
   $('#myButton').floatingWhatsApp({
     phone: '5493794377417',
-    popupMessage: 'Hola, en que podemos ayudarte? ',
-    message: "Hola, queria consultar acerca de ",
+    popupMessage: 'Bienvenidos, en que podemos ayudarte? ',
+    message: "Hola, quería consultar acerca de ",
     showPopup: true,
     showOnIE: false,
     position: 'right',
