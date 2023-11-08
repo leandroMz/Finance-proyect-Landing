@@ -1,23 +1,58 @@
-fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
-  .then(response => response.json())
-  .then(data => {
-    const valoresDolar = data.filter(d => d.casa.nombre.includes('Dolar'));
-    const dolarOficial = valoresDolar.find(v => v.casa.nombre === 'Dolar Oficial');
-    const dolarBlue = valoresDolar.find(v => v.casa.nombre === 'Dolar Blue');
-    const dolarBolsa = valoresDolar.find(v => v.casa.nombre === 'Dolar Bolsa');
-    const dolarSoja = valoresDolar.find(v => v.casa.nombre === 'Dolar Contado con Liqui');
+// fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+//   .then(response => response.json())
+//   .then(data => {
+//     const valoresDolar = data.filter(d => d.casa.nombre.includes('Dolar'));
+//     const dolarOficial = valoresDolar.find(v => v.casa.nombre === 'Dolar Oficial');
+//     const dolarBlue = valoresDolar.find(v => v.casa.nombre === 'Dolar Blue');
+//     const dolarBolsa = valoresDolar.find(v => v.casa.nombre === 'Dolar Bolsa');
+//     const dolarSoja = valoresDolar.find(v => v.casa.nombre === 'Dolar Contado con Liqui');
 
-    const valoresDolarElem = document.querySelector('#dolar-cinta');
-    const dolarOficialElem = valoresDolarElem.querySelector('.odenDolares.d-oficial span');
-    const dolarBlueElem = valoresDolarElem.querySelector('.odenDolares.d-blue span');
-    const dolarBolsaElem = valoresDolarElem.querySelector('.odenDolares.d-bolsa span');
-    const dolarSojaElem = valoresDolarElem.querySelector('.odenDolares.d-soja span');
+//     const valoresDolarElem = document.querySelector('#dolar-cinta');
+//     const dolarOficialElem = valoresDolarElem.querySelector('.odenDolares.d-oficial span');
+//     const dolarBlueElem = valoresDolarElem.querySelector('.odenDolares.d-blue span');
+//     const dolarBolsaElem = valoresDolarElem.querySelector('.odenDolares.d-bolsa span');
+//     const dolarSojaElem = valoresDolarElem.querySelector('.odenDolares.d-soja span');
 
-    dolarOficialElem.textContent = `Compra $${dolarOficial.casa.compra}  -  Venta $${dolarOficial.casa.venta}`;
-    dolarBlueElem.textContent = `Compra $${dolarBlue.casa.compra}  -  Venta $${dolarBlue.casa.venta}`;
-    dolarBolsaElem.textContent = `Compra $${dolarBolsa.casa.compra}  -  Venta $${dolarBolsa.casa.venta}`;
-    dolarSojaElem.textContent = `Compra $${dolarSoja.casa.compra}  -  Venta $${dolarSoja.casa.venta}`;
-  });
+//     dolarOficialElem.textContent = `Compra $${dolarOficial.casa.compra}  -  Venta $${dolarOficial.casa.venta}`;
+//     dolarBlueElem.textContent = `Compra $${dolarBlue.casa.compra}  -  Venta $${dolarBlue.casa.venta}`;
+//     dolarBolsaElem.textContent = `Compra $${dolarBolsa.casa.compra}  -  Venta $${dolarBolsa.casa.venta}`;
+//     dolarSojaElem.textContent = `Compra $${dolarSoja.casa.compra}  -  Venta $${dolarSoja.casa.venta}`;
+//   });
+
+  // Función para obtener y actualizar los valores de los diferentes tipos de dólar
+function obtenerValoresDolar() {
+  fetch('https://www.cronista.com/MercadosOnline/moneda.html?id=ARSB')
+    .then(response => response.text()) // Obtener el contenido de la página como texto
+    .then(data => {
+      // Crear un elemento HTML temporal para analizar el contenido
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(data, 'text/html');
+
+      // Encontrar y actualizar los valores de los distintos tipos de dólar
+      const dolarBlueValue = doc.querySelector('.box-dolar-blue .value').textContent.trim();
+      const dolarOficialValue = doc.querySelector('.box-dolar-oficial .value').textContent.trim();
+      const dolarMepValue = doc.querySelector('.box-dolar-mep .value').textContent.trim();
+      const dolarCclValue = doc.querySelector('.box-dolar-ccl .value').textContent.trim();
+
+      // Actualizar los elementos HTML en tu página con los valores obtenidos
+      const dolarOficialElem = document.querySelector('.odenDolares.d-oficial span');
+      const dolarBlueElem = document.querySelector('.odenDolares.d-blue span');
+      const dolarBolsaElem = document.querySelector('.odenDolares.d-bolsa span');
+      const dolarSojaElem = document.querySelector('.odenDolares.d-soja span');
+
+      dolarOficialElem.textContent = `Compra $${dolarOficialValue} - Venta $${dolarOficialValue}`;
+      dolarBlueElem.textContent = `Compra $${dolarBlueValue} - Venta $${dolarBlueValue}`;
+      dolarBolsaElem.textContent = `Compra $${dolarMepValue} - Venta $${dolarMepValue}`;
+      dolarSojaElem.textContent = `Compra $${dolarCclValue} - Venta $${dolarCclValue}`;
+    })
+    .catch(error => {
+      console.error('Error al obtener los valores de dólar:', error);
+    });
+}
+
+// Llamar a la función para obtener y actualizar los valores de dólar al cargar la página
+obtenerValoresDolar();
+
 
 
 
